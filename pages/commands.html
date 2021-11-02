@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>UpBeat Commands</title>
+        <link rel="icon" type="image/png" href="../images/favicon.ico"/>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/commands.css">
+        <link rel="stylesheet" href="../css/scrollbar.css">
+        <script src="../script/main.js" async defer></script>
+        <script src="../script/switch.js" async defer></script>
+        <link rel="shortcut icon" type="image/jpg" href="images/Logo.png"/>
+    </head>
+    <body>
+        <my-background></my-background>
+        <my-header></my-header>
+        <div class="content">
+            <div class="first">
+                <div class="fieldset">
+                    <div class="slide-container">
+                        <input class="inp" type="radio" name="cmd" id="dcmds" checked>
+                        <label class="fieldlabel" for="dcmds" id="dcmdslabel">Default commands</label>
+                        <input class="inp" type="radio" name="cmd" id="acmds">
+                        <label class="fieldlabel" for="acmds" id="acmdslabel">Admin commands</label>
+                        <a class="slide" aria-hidden="true"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="second">
+                <input class="searchbar" placeholder="Search command..."></input>
+            </div>
+            <div class="third">
+                <link rel="stylesheet" href="../css/cmdlist.css">
+                <div class="selectedcontent">
+                    <div id="elements"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

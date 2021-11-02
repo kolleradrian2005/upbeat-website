@@ -1,0 +1,23 @@
+.element {
+    position: relative;
+    top: 10px;
+    height: 80px;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    transition: 600ms cubic-bezier(.33,2.25,.7,1.01);
+    background-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    user-select: none;
+}
+.expanded {
+    height: 120px;
+}
+.title {
+    font-size: 22px;
+    line-height: 80px;
+}
+.description {
+    position: relative;
+    font-size: 20px;
+}
