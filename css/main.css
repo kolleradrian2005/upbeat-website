@@ -10,6 +10,7 @@
     --textcolor: #ffffff;
     --headerbuttoncolor: #ffffff;
 }
+
 body {
     margin: 0;
     font-family: IOS;
@@ -56,81 +57,46 @@ html {
          animation: fadein 0.5s;
 }
 .first {
+    position: relative;
     height: 80px;
     width: 100%;
 }
 
 .second {
+    position: relative;
     height: 15px;
 }
 
 .third {
+    position: relative;
     height: 520px;
     bottom: 0;
     margin-bottom: 0;
+    margin-top: 5vw;
     font-family: IOS;
 }
 
-/*Small mode*/
-
-@media only screen and (max-width: 825px) {
-    .first {
-        margin-top: 10px;
-    }
-    .second {
-        margin-top: 20px;
-        font-size: 30px;
-    }
-    .third {
-        margin-top: 40px;
-    }
-    .cols {
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%) scale(0.5);
-    }
-    .joinbutton:hover {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%) scale(0.75, 0.75);
-    }
-    .joinbutton {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%) scale(0.6, 0.6);
-    }
-    .moneyt commandst clockt {
-        position: relative;
-        left: 25%;
-        transform: translateX(-37.5%) scale(0.75);
-    }
+.joinlogo {
+    width: 75px;
+    height: auto;
 }
 
-/*Large mode*/
-
-@media only screen and (min-width: 825px) {
-    .joinbutton:hover {
-        transform-origin: center center;
-        border-radius: 18px;
-        padding: 15px 32px;
-        transform: scale(1.1);
-        border: 6px solid rgba(100,100,100, 0.2);
-        background-color: rgba(100,100,100, 0.2);
-        color: white;
-    }
-    .first {
-        margin-top: 80px;
-    }
-    .second {
-        padding-top: 80px;
-        font-size: 38px;
-    }
-    .third {
-        margin-top: 80px;
-    }
-    .cols {
-        transform: scale(0.7);
-    }
+/**/
+.joinbutton:hover {
+    transform-origin: center center;
+    border-radius: 18px;
+    padding: 15px 32px;
+    transform: scale(1.1);
+    border: 6px solid rgba(100,100,100, 0.2);
+    background-color: rgba(100,100,100, 0.2);
+    color: white;
+}
+.first {
+    margin-top: 80px;
+}
+.second {
+    padding-top: 80px;
+    font-size: 38px;
 }
 
 .joinbutton {
@@ -145,7 +111,7 @@ html {
     border: 4px solid white;
     background-color: rgba(100,100,100, 0.2);
     color: white;
-    transition: .4s;
+    transition: transform 0.4s, border 0.4s;
     display: inline-block;
 }
 
@@ -161,8 +127,8 @@ html {
 .second {
     position: relative;
     font-family: Monice;
-    transition: 400ms;
-    transform-origin: center;
+    /*transition: 400ms;
+    transform-origin: center;*/
 }
 
 .tile {
@@ -172,6 +138,7 @@ html {
     height:auto;
 }
 .cols {
+    transform: scale(0.7);
     transition: 400ms;
     transform-origin: center;
     justify-content: center;
@@ -182,8 +149,8 @@ html {
 }
 .myimg {
     transform: scale(0.9);
-    width: inherit;
     height: auto;
+    width: 100%;
 }
 .tile:hover{
     transform: scale(1.1);
@@ -220,4 +187,93 @@ html {
 .tile:hover + .description {
     opacity: 1;
     margin-top: 45px;
+}
+
+
+/* Small size */
+
+@media only screen and (max-width: 825px) {
+    .first {
+        height: 20vw;
+        margin-top: 40px;
+    }
+    .second {
+        height: 24vw;
+        padding-top: 1vw;
+        font-size: 6vw;
+    }
+    .third {
+        margin: 0;
+        padding: 0;
+        height: unset;
+        bottom: 15vw;
+    }
+    .cols {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%) scale(0.5)
+    }
+    .joinbutton {
+        position: absolute;
+        left: 50%;
+        width: 100%;
+        font-size: 7.15vw;
+        transform: translateX(-50%) scale(0.75, 0.75);
+    }
+    .joinbutton:hover {
+        transform: translateX(-50%) scale(0.8, 0.8);
+    }
+    .moneyt commandst clockt {
+        position: relative;
+        left: 25%;
+        transform: translateX(-37.5%) scale(0.75);
+    }
+    .joinlogo {
+        width: 10vw;
+    }
+    .joinspan2 {
+        bottom: 1vw;
+    }
+
+}
+
+/* Phone size */
+
+@media only screen and (max-width: 572px) {
+    .first {
+        margin-top: 40px;
+    }
+    .col {
+        width: 100vw;
+    }
+    .second {
+        top: 2vw;
+    }
+    .third {
+        top: 2vw;
+        margin: 15px;
+    }
+    .tch {
+        height: 90vw;
+    }
+    .tile {
+        height: 120vw;
+        width: 100%;
+    }
+    .title {
+        font-size: 12vw;
+    }
+    .description {
+        font-size: 8vw;
+    }
+    .cols {
+        transform-origin: center center;
+        transform: translateX(0%) scale(1);
+        left:0;
+        margin: 0;
+        padding: 0;
+        width: unset;
+        position: unset;
+        display: block;
+    }
 }

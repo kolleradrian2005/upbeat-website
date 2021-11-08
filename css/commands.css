@@ -76,6 +76,7 @@ body {
     transform: scale(102.5%);
 }
 .fieldlabel {
+    max-lines: 1;
     cursor: pointer;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
     width: 50%;
@@ -139,4 +140,18 @@ body {
 .elements {
     position: relative;
     margin-top: 10px;
+}
+
+/* Small size */
+
+@media only screen and (max-width: 825px) {
+    .fieldlabel {
+        font-size: 2vw;
+    }
+    .fieldset {
+        margin-top: 40px;
+    }
+    .content {
+        width: 75%;
+    }
 }
