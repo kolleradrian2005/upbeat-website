@@ -81,7 +81,6 @@ html {
     height: auto;
 }
 
-/**/
 .joinbutton:hover {
     transform-origin: center center;
     border-radius: 18px;
@@ -254,14 +253,16 @@ html {
         margin: 15px;
     }
     .tch {
-        height: 90vw;
+        height: 70vw;
     }
     .tile {
-        height: 120vw;
+        height: 90vw;
         width: 100%;
     }
     .title {
         font-size: 12vw;
+        margin: 0;
+        padding: 0;
     }
     .description {
         font-size: 8vw;
@@ -270,7 +271,7 @@ html {
         transform-origin: center center;
         transform: translateX(0%) scale(1);
         left:0;
-        margin: 0;
+        margin: 15vw;
         padding: 0;
         width: unset;
         position: unset;

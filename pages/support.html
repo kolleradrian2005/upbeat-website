@@ -10,10 +10,32 @@
         <link rel="stylesheet" href="../css/support.css">
         <link rel="stylesheet" href="../css/scrollbar.css">
         <script src="../script/main.js" async defer></script>
+        <script src="../script/support.js" async defer></script>
         <link rel="shortcut icon" type="image/jpg" href="images/Logo.png"/>
     </head>
     <body>
         <my-background></my-background>
         <my-header></my-header>
+        <div class="content">
+            <div class="title"></div>
+            <input class="addressinput" placeholder="Type address..."> </input>
+            <a class="submit">Submit</a>
+            <div class="progress">
+                <div class="cross state">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                </div>
+                <div class="tick state">
+                    <div class="tickline tickline1"></div>
+                    <div class="tickline tickline2"></div>
+                </div>
+                <div class="loading state">
+                    <svg class="spinner" viewBox="0 0 50 50">
+                        <circle class="path" cx="25" cy="25" r="15" fill="none"></circle>
+                    </svg>
+                </div>
+                <div class="description"></div>
+            </div>
+        </div>
     </body>
 </html>
