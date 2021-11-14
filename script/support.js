@@ -51,7 +51,7 @@ submit.addEventListener('click', async () => {
     if (!address)
         return onError('Please provide an address above!')
     
-    const checkUrl = `http://localhost:666/check?address=${address}`
+    const checkUrl = `https://upbeat-backend.vercel.app/check?address=${address}`
     let checkResponse = await get(checkUrl);
 
     if (!checkResponse)
@@ -60,7 +60,7 @@ submit.addEventListener('click', async () => {
     if (checkResponse.status != 200)
         return onError('You have provided an invalid e-mail address!')
     
-    const sendUrl = `http://localhost:666/send?address=${address}`
+    const sendUrl = `https://upbeat-backend.vercel.app/send?address=${address}`
     let sendResponse = await get(sendUrl);
 
     if (!sendResponse)
